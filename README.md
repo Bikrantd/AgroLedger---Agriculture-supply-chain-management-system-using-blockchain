@@ -43,26 +43,23 @@ Agroledger is a decentralized supply chain management system built on Ethereum b
 ## 🚀 Installation Guide
 
 ### Step 1: Clone the Repository
-
-```bash
 git clone https://github.com/Bikrantd/AgroLedger---Agriculture-supply-chain-management-system-using-blockchain.git
 cd AgroLedger
 
-
 Step 2: Install Backend Dependencies
-bash
 npm install
+
 Step 3: Install Frontend Dependencies
-bash
 cd client
 npm install
 cd ..
+
 Step 4: Start Ganache
 Open Ganache application
 
 Click "New Workspace" or "Quickstart"
 
-Ensure it's running on http://127.0.0.1:7545
+Ensure it's running on http://127.0.0.1:7545 or by deafault on http://127.0.0.1:1337
 
 Note the accounts (Account 0 is the contract owner)
 
@@ -197,6 +194,7 @@ OriginChain/
 ├── test/                        # Contract tests
 ├── truffle-config.js
 └── package.json
+
 👥 Role-Based Access
 Role	Permissions
 Admin	Register stakeholders, place orders, generate QR codes, view metrics
