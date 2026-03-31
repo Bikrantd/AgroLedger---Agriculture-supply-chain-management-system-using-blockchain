@@ -1,154 +1,29 @@
- SYSTEM REQUIREMENTS │
-├─────────────────────────────────────────────────────────────────┤
-│ Node.js v16+ │ npm v8+ │ Git Latest │
-│ Ganache Latest │ MetaMask Latest │ Truffle v5+ │
-└─────────────────────────────────────────────────────────────────┘
+# 🌾 Agroledger - Blockchain Food Supply Chain Management System
 
+Agroledger is a decentralized supply chain management system built on Ethereum blockchain that enables transparent tracking of agricultural products from farm to table.
 
-┌─────────────────────────────────────────────────────────────────┐
-│ INSTALLATION STEPS │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ $ git clone https://github.com/Bikrantd/AgroLedger.git │
-│ $ cd AgroLedger │
-│ $ npm install │
-│ $ cd client && npm install && cd .. │
-│ │
-└─────────────────────────────────────────────────────────────────┘
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.x-blue)](https://soliditylang.org/)
+[![React](https://img.shields.io/badge/React-18.x-green)](https://reactjs.org/)
+[![Web3.js](https://img.shields.io/badge/Web3.js-1.10.x-yellow)](https://web3js.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
+---
 
-┌─────────────────────────────────────────────────────────────────┐
-│ DEPLOY CONTRACT │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ $ truffle compile │
-│ $ truffle migrate --reset │
-│ │
-└─────────────────────────────────────────────────────────────────┘
+## 📋 Quick Setup
 
+### Prerequisites
 
-┌─────────────────────────────────────────────────────────────────┐
-│ EMAILJS CREDENTIALS (FREE) │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ Service ID : service_xxxxxxx │
-│ Template ID : template_xxxxxxx │
-│ Public Key : yTsJIoBTI6CL8zAlr │
-│ │
-└─────────────────────────────────────────────────────────────────┘
+| Software | Version | Download |
+|----------|---------|----------|
+| Node.js | v16+ | [nodejs.org](https://nodejs.org/) |
+| Ganache | Latest | [trufflesuite.com/ganache](https://trufflesuite.com/ganache/) |
+| MetaMask | Latest | [metamask.io](https://metamask.io/) |
+| Truffle | v5+ | `npm install -g truffle` |
 
+### Installation
 
-┌─────────────────────────────────────────────────────────────────┐
-│ .env FILE (client folder) │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ REACT_APP_EMAILJS_SERVICE_ID=service_xxxxxxx │
-│ REACT_APP_EMAILJS_TEMPLATE_ID=template_xxxxxxx │
-│ REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key │
-│ REACT_APP_ADMIN_EMAIL=your_email@gmail.com │
-│ REACT_APP_ADMIN_PASSWORD=Admin123! │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ RUN APPLICATION │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ $ cd client │
-│ $ npm start │
-│ │
-│ Open: http://localhost:3000 │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ LOGIN CREDENTIALS │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ ADMIN │
-│ ├── Email : your_email@gmail.com │
-│ └── Password : Admin123! │
-│ │
-│ STAKEHOLDERS │
-│ └── Scan QR Code from Admin Dashboard │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ GANACHE NETWORK │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ RPC URL : http://127.0.0.1:7545 │
-│ Chain ID : 1337 │
-│ Currency : ETH │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ SUPPLY CHAIN STAGES │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ ORDERED → SUPPLIED → PROCESSED → DISTRIBUTED → RETAILED → SOLD │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ ROLE PERMISSIONS │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ ADMIN : Register, Place Orders, Generate QR │
-│ FARMER : Supply Raw Materials │
-│ MANUFACTURER : Process Food │
-│ DISTRIBUTOR : Distribute Products │
-│ RETAILER : Retail, Mark Sold │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ PERFORMANCE METRICS │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ Success Rate : 100% │
-│ Avg Gas/Tx : 98,500 │
-│ Throughput : 0.43 tx/sec │
-│ Traceability : 62.5% │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ TROUBLESHOOTING │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ ❌ MetaMask not connecting → Start Ganache │
-│ ❌ OTP not received → Check EmailJS .env │
-│ ❌ Contract not deployed → Run truffle migrate --reset │
-│ ❌ Invalid OTP → OTP expires in 15 minutes │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ 📚 DOCUMENTATION │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ Full Report : AGRO_LEDGER_REPORT.pdf │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
-
-┌─────────────────────────────────────────────────────────────────┐
-│ ⭐ SUPPORT │
-├─────────────────────────────────────────────────────────────────┤
-│ │
-│ GitHub : https://github.com/Bikrantd/AgroLedger │
-│ Star : ⭐ If you found this helpful │
-│ │
-└─────────────────────────────────────────────────────────────────┘
-
+```bash
+git clone https://github.com/Bikrantd/AgroLedger.git
+cd AgroLedger
+npm install
+cd client && npm install && cd ..
