@@ -1,0 +1,9 @@
+﻿node_modules/
+client/node_modules/
+client/node_modules/.cache/
+.env
+.cache/
+*.pack
+build/
+client/build/
+.DS_Store

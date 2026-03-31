@@ -1,0 +1,75 @@
+.stakeholder-login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.stakeholder-login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.role-icon-large {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.stakeholder-login-card h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.scanner-container {
+    margin: 20px 0;
+}
+
+.scanner-container video {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #27ae60;
+}
+
+.scanner-hint {
+    color: #666;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.back-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ecf0f1;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background: #bdc3c7;
+}
+
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}

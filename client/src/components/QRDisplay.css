@@ -1,0 +1,192 @@
+.qr-display-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .qr-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  .qr-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .qr-header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+  }
+  
+  .product-main-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .product-main-card .card-body {
+    padding: 30px;
+  }
+  
+  .product-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-id {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .product-description {
+    color: #34495e;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .stage-badge {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.3);
+  }
+  
+  .stage-label {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  
+  .stage-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .section-title {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+  }
+  
+  .timeline-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    height: 100%;
+  }
+  
+  .timeline-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .timeline-card.supplier {
+    border-top: 4px solid #00b894;
+  }
+  
+  .timeline-card.manufacturer {
+    border-top: 4px solid #fdcb6e;
+  }
+  
+  .timeline-card.distributor {
+    border-top: 4px solid #0984e3;
+  }
+  
+  .timeline-card.retailer {
+    border-top: 4px solid #e84342;
+  }
+  
+  .timeline-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .timeline-card h4 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .company-name {
+    color: #34495e;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .company-location {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  .verification-card {
+    background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .verification-card h4 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .verification-card p {
+    opacity: 0.95;
+    margin: 0;
+  }
+  
+  .verification-badge {
+    background: rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .verified-icon {
+    background: white;
+    color: #00b09b;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* Print styles */
+  @media print {
+    .qr-header, .btn, .verification-card {
+      display: none !important;
+    }
+    
+    .qr-display-container {
+      background: white;
+    }
+    
+    .product-main-card, .timeline-card {
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+  }
