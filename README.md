@@ -23,7 +23,7 @@ Agroledger is a decentralized supply chain management system built on Ethereum b
 
 # 🌾 Agroledger - Blockchain Food Supply Chain Management System
 
-Agroledger is a decentralized supply chain management system built on Ethereum blockchain that enables transparent tracking of agricultural products from farm to table. The system connects farmers, manufacturers, distributors, retailers, and consumers through a secure, immutable platform.
+Agroledger is a decentralized supply chain management system that is built on Ethereum blockchain that enables transparent tracking of agricultural products from farm to table. The system connects farmers, manufacturers, distributors, retailers, and consumers through a secure, immutable platform.
 
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.x-blue)](https://soliditylang.org/)
 [![React](https://img.shields.io/badge/React-18.x-green)](https://reactjs.org/)
